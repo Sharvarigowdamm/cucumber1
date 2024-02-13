@@ -18,7 +18,7 @@ public class HomePage {
 
 	public HomePage(WebDriver driver)
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver,this);
 		}
 
 	public void navigateToCartPage()

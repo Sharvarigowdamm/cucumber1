@@ -28,7 +28,8 @@ public class PlaceTheOrder {
 	@Given("user is on home page")
 	public void user_is_on_home_page() {
 	    // Write code here that turns the phrase above into concrete actions
-	    Base.openUrl("");
+	    
+		Base.openUrl("https://danube-webshop.herokuapp.com/");
 	}
 	@When("user search an item {string}")
 	public void user_search_an_item(String item) {
@@ -60,7 +61,7 @@ public class PlaceTheOrder {
 	@Then("should navigate to checkout page")
 	public void should_navigate_to_checkout_page() {
 
-
+      System.out.println("navigated to checkout page");
 	}
 
 }

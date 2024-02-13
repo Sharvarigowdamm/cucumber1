@@ -14,7 +14,7 @@ public class Base {
 	private static WebDriver driver;
 	//public static properties prop;
 	private Base() {
-		String browser="chrome";
+		String browser= "chrome";
 		if(browser.equalsIgnoreCase("chrome"))
 		{
 			driver=new ChromeDriver();
