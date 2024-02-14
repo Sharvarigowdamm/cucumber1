@@ -1,4 +1,4 @@
-package stepdefinations;
+package MacStepDEfination;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -11,13 +11,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class PlaceTheOrder {
+public class Macstepdef {
+	
 	WebDriver driver=Base.getDriver();
 	HomePage homepage;
 	SearchResultPage resultPage;
 	ShoppingCartPage cartPage;
 	
-	public PlaceTheOrder() {
+	public Macstepdef() {
 		System.out.println(driver);
 		homepage= new HomePage(driver);
 		resultPage=new SearchResultPage(driver);
@@ -25,11 +26,8 @@ public class PlaceTheOrder {
 		
 	}
 	
-	
 	@Given("user is on home page")
 	public void user_is_on_home_page() {
-	    // Write code here that turns the phrase above into concrete actions
-	    
 		Base.openUrl("https://danube-webshop.herokuapp.com/");
 	}
 	@When("user search an item {string}")

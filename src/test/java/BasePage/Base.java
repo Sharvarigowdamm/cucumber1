@@ -17,6 +17,7 @@ public class Base {
 		String browser= "chrome";
 		if(browser.equalsIgnoreCase("chrome"))
 		{
+			System.out.println("in chrome");
 			driver=new ChromeDriver();
 		}
 		else if(browser.equalsIgnoreCase("edge"))
@@ -30,10 +31,12 @@ public class Base {
 	public static void initDriver() {
 		if(testbase==null)
 		{
+	      System.out.println(testbase);
 			testbase=new Base();
 		}
 	}
 	public static WebDriver getDriver() {
+		System.out.println(driver);
 		return driver;
 	}
 	public static void  openUrl(String url) {
